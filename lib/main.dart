@@ -1,8 +1,10 @@
 // ignore_for_file: deprecated_member_use
- 
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,6 +23,14 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      localizationsDelegates: [
+        AppLocalizations.delegate,
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
+      supportedLocales: AppLocalizations.supportedLocales,
+      locale: Locale("fa"),
       theme: themeMode == ThemeMode.dark
           ? MyAppThemeConfiguration.dark().getTheme()
           : MyAppThemeConfiguration.light().getTheme(),
@@ -96,7 +106,7 @@ class MyAppThemeConfiguration {
         fillColor: surfaceColor,
         filled: true,
       ),
-      textTheme: GoogleFonts.reemKufiFunTextTheme(TextTheme(
+      textTheme: GoogleFonts.latoTextTheme(TextTheme(
         bodyText2: TextStyle(fontSize: 15, color: primaryTextColor),
         bodyText1: TextStyle(fontSize: 13, color: secondaryTextColor),
         headline6:
@@ -128,7 +138,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Profile"),
+        title: Text(AppLocalizations.of(context)!.profileTitle),
         actions: [
           const Padding(
             padding: EdgeInsets.only(right: 8.0),
