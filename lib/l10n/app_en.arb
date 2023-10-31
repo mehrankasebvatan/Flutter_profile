@@ -3,5 +3,15 @@
     "name": "Mehran Kasebvatan",
     "job": "Happy Developer",
     "location": "Tehran, Iran",
-    "summery": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    "summery": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "skills": "Skills",
+    "personalInformation": "Personal Information",
+    "mail": "Email",
+    "password" : "Password",
+    "save": "Save",
+    "selectedLanguage" : "Selected Language",
+    "en":"English",
+    "fa": "Farsi"
+
+
 }
