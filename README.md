@@ -1,3 +1,3 @@
-# profile UI with fluttre
+# profile UI with flutter
 
 
